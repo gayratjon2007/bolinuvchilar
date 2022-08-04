@@ -10,12 +10,12 @@ public class Main {
 	// write your code here
 
         Scanner scanner = new Scanner(in);
-        int a = scanner.nextInt();
+
         int res = 0;
         int i=1;
-  while (i<=100) {
-      if (i % a == 0) {
-          res++;
+  while (i<=50) {
+      if (i % 3 == 0 && i% 5 == 0) {
+          res+=i;
           System.out.print(i + " ");
       }
       i++;
